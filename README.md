@@ -1,4 +1,4 @@
-# GithubMostStaredReposTask
+# Github-Most-Stared-Repos-Task
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
@@ -8,7 +8,7 @@ This repo is for listing the most starred Github repos that were created in the 
 
 # Demo Link
 
-View live demp at [Demo](https://github-top-trending-repos.netlify.app/home)
+View live demo at [Demo](https://github-top-trending-repos.netlify.app/home)
 
 # Libraries Used
 
