@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
+# Repo Idea
+
+This repo is for listing the most starred Github repos that were created in the last 30 days.
+
+# Demo Link
+
+View live demp at [Demo](https://github-top-trending-repos.netlify.app/home)
+
+# Libraries Used
+
+- [ngx-Bootstrap](https://valor-software.com/ngx-bootstrap/#/) to make good use of the bootstrap grid system
+- [ngx-infinite-scroll](https://www.npmjs.com/package/ngx-infinite-scroll) to implement pagination on scroll
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
