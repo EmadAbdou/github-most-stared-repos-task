@@ -1,1 +1,8 @@
-<p>home-page works!</p>
+<div class="container repos-container pt-5 pb-5" *ngIf="reposData.length > 0 && !showError" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onScroll()">
+    <app-repo-card *ngFor="let repo of reposData" [repoData]="repo"></app-repo-card>
+</div>
+<div class="container error-container pt-5 pb-5" *ngIf="showError">
+    <div class="row">
+        <p>Sorry Error Happened, Please Try Again!</p>
+    </div>
+</div>

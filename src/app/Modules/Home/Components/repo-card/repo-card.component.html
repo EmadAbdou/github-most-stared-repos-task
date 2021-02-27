@@ -1,1 +1,22 @@
-<p>repo-card works!</p>
+<div class="row repo-item" *ngIf="repoData">
+    <div class="col-lg-2 col-md-4 col-sm-12 repo-owner-avatar">
+        <div class="repo-owner-avatar-container">
+            <img [src]="repoData.owner.avatar_url" class="rounded" [alt]="repoData.owner.login + 'image'">
+        </div>
+    </div>
+    <div class="col-lg-10 col-md-8 col-sm-12 repo-data">
+        <h2 class="repo-name">{{ repoData.name }}</h2>
+        <p class="repo-description">{{ repoData.description }}</p>
+        <div class="other-details">
+            <div class="repo-indicators">
+                <button class="btn btn-info">Stars: {{ repoData.stargazers_count }}</button>
+                <button class="btn ml-2 btn-danger">Issues: {{ repoData.open_issues_count }}</button>
+            </div>
+            <p class="repo-date-author">
+                Submitted {{ repoInterval }}
+                <span>{{ repoInterval > 1 ? 'days' : 'day'}}</span> ago by
+                <span>{{ repoData.owner.login }}</span>
+            </p>
+        </div>
+    </div>
+</div>
